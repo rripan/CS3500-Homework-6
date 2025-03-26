@@ -1,0 +1,10 @@
+// Transcript of FillFirstStrategy choosing a move for Red player
+getCurrentPlayer()
+getPlayerHand(RED)
+getRows()
+getColumns()
+getCellContent(0,0)
+getCellOwner(0,0)
+getPawnCount(0,0)
+// Strategy found a valid move at (0,0) with card index 0
+// Move: cardIndex=0, row=0, col=0

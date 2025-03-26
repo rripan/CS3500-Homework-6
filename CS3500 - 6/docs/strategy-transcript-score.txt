@@ -1,0 +1,31 @@
+// Transcript of MaximizeRowScoreStrategy choosing a move for Red player
+getCurrentPlayer()
+getPlayerHand(RED)
+getRows()
+getRowScore(RED,0)
+getRowScore(BLUE,0)
+getColumns()
+getCellContent(0,0)
+getCellOwner(0,0)
+getPawnCount(0,0)
+// Checking if card 0 with value 1 can be placed at (0,0) to improve row 0 score
+getCellContent(0,1)
+getCellContent(0,2)
+getCellContent(0,3)
+getCellContent(0,4)
+// Checking if card 1 with value 2 can be placed at (0,0) to improve row 0 score
+getCellContent(0,0)
+getCellOwner(0,0)
+getPawnCount(0,0)
+// Checking if card 2 with value 3 can be placed at (0,0) to improve row 0 score
+getCellContent(0,0)
+getCellOwner(0,0)
+getPawnCount(0,0)
+// Found best move for row 0: cardIndex=2, row=0, col=0, which improves score by 3
+getRowScore(RED,1)
+getRowScore(BLUE,1)
+// No need to check row 1 since we already found a move for row 0
+getRowScore(RED,2)
+getRowScore(BLUE,2)
+// No need to check row 2 since we already found a move for row 0
+// Move: cardIndex=2, row=0, col=0
